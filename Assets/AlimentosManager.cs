@@ -19,9 +19,8 @@ public class AlimentosManager : MonoBehaviour
         {
             ActivateAll();
         }
-
-     
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+          
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 DeactivateAll();
                 currentIndex--;
@@ -32,7 +31,7 @@ public class AlimentosManager : MonoBehaviour
                 Alimentos[currentIndex].SetActive(true);
             }
 
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 DeactivateAll();
                 currentIndex++;
@@ -42,9 +41,6 @@ public class AlimentosManager : MonoBehaviour
                 }
                 Alimentos[currentIndex].SetActive(true);
             }
-
-
-
         }
         void DeactivateAll()
         {
